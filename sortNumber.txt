@@ -1,0 +1,78 @@
+MOV #0, 30   ; line 1,  load value 30 to memory location 0
+MOV #1, 23   ; line 2,  load value 23 to memory location 1
+MOV #2, 4    ; line 3,  load value 4 to memory location 2
+MOV #3, 56   ; line 4,  load value 56 to memory location 3
+MOV #4, 34   ; line 5,  load value 34 to memory location 4
+MOV #5, 56   ; line 6,  load value 56 to memory location 5
+MOV #6, 89   ; line 7,  load value 89 to memory location 6
+MOV #7, 32   ; line 8,  load value 32 to memory location 7
+MOV #8, 45   ; line 9,  load value 45 to memory location 8
+MOV #9, 25   ; line 10, load value 25 to memory location 9
+MOV R4, 10   ; line 11, load value 10 to register 4
+MOV #0, R1   ; line 12, load value of memory location 0 to register 1
+MOV #1, R2   ; line 13, load value of memory location 1 to register 2
+MOV #0, R3   ; line 14, load value of memory location 0 to register 3(temp)
+SUB R1, R2   ; line 15, subtract register 2 from register 1
+JPN R1, 19   ; line 16, if register 1 is zero or smaller then go to line 19
+MOV R2, #0   ; line 17, load value of register 2 to memory location 0
+MOV R3, #1   ; line 18, load value of register 3 to memory location 1
+MOV #1, R1   ; line 19, load value of memory location 1 to register 1 
+MOV #2, R2   ; line 20, load value of memory location 2 to register 2
+MOV #1, R3   ; line 21, load value of memory location 1 to register 3
+SUB R1, R2   ; line 22, subtract register 2 from register 1
+JPN R1, 26   ; line 23, if register 1 is zero or smaller then go to line 26
+MOV R2, #1   ; line 24, load value of register 2 to memory location 1
+MOV R3, #2   ; line 25, load value of register 3 to memory location 2
+MOV #2, R1   ; line 26, load value of memory location 2 to register 1
+MOV #3, R2   ; line 27, load value of memory location 3 to register 2
+MOV #2, R3   ; line 28, load value of memory location 2 to register 3
+SUB R1, R2   ; line 29, subtract register 2 from register 1
+JPN R1, 33   ; line 30, if register 1 is zero or smaller then go to line 33
+MOV R2, #2   ; line 31, load value of register 2 to memory location 2
+MOV R3, #3   ; line 32, load value of register 3 to memory location 3
+MOV #3, R1   ; line 33, load value of memory location 3 to register 1 
+MOV #4, R2   ; line 34, load value of memory location 4 to register 2 
+MOV #3, R3   ; line 35, load value of memory location 3 to register 3 
+SUB R1, R2   ; line 36, subtract register 2 from register 1
+JPN R1, 40   ; line 37, if register 1 is zero or smaller then go to line 40
+MOV R2, #3   ; line 38, load value of register 2 to memory location 3
+MOV R3, #4   ; line 39, load value of register 3 to memory location 4
+MOV #4, R1   ; line 40, load value of memory location 4 to register 1 
+MOV #5, R2   ; line 41, load value of memory location 5 to register 2 
+MOV #4, R3   ; line 42, load value of memory location 4 to register 3 
+SUB R1, R2   ; line 43, subtract register 2 from register 1
+JPN R1, 47   ; line 44, if register 1 is zero or smaller then go to line 47
+MOV R2, #4   ; line 45, load value of register 2 to memory location 4
+MOV R3, #5   ; line 46, load value of register 3 to memory location 5
+MOV #5, R1   ; line 47, load value of memory location 5 to register 1 
+MOV #6, R2   ; line 48, load value of memory location 6 to register 2 
+MOV #5, R3   ; line 49, load value of memory location 5 to register 3 
+SUB R1, R2   ; line 50, subtract register 2 from register 1
+JPN R1, 54   ; line 51, if register 1 is zero or smaller then go to line 54
+MOV R2, #5   ; line 52, load value of register 2 to memory location 5
+MOV R3, #6   ; line 53, load value of register 3 to memory location 6
+MOV #6, R1   ; line 54, load value of memory location 6 to register 1 
+MOV #7, R2   ; line 55, load value of memory location 7 to register 2 
+MOV #6, R3   ; line 56, load value of memory location 6 to register 3  
+SUB R1, R2   ; line 57, subtract register 2 from register 1
+JPN R1, 61   ; line 58, if register 1 is zero or smaller then go to line 61
+MOV R2, #6   ; line 59, load value of register 2 to memory location 6
+MOV R3, #7   ; line 60, load value of register 3 to memory location 7
+MOV #7, R1   ; line 61, load value of memory location 7 to register 1 
+MOV #8, R2   ; line 62, load value of memory location 8 to register 2 
+MOV #7, R3   ; line 63, load value of memory location 7 to register 3 
+SUB R1, R2   ; line 64, subtract register 2 from register 1
+JPN R1, 68   ; line 65, if register 1 is zero or smaller then go to line 68
+MOV R2, #7   ; line 66, load value of register 2 to memory location 7
+MOV R3, #8   ; line 67, load value of register 3 to memory location 8
+MOV #8, R1   ; line 68, load value of memory location 8 to register 1 
+MOV #9, R2   ; line 69, load value of memory location 9 to register 2 
+MOV #8, R3   ; line 70, load value of memory location 8 to register 3 
+SUB R1, R2   ; line 71, subtract register 2 from register 1
+JPN R1, 75   ; line 72, if register 1 is zero or smaller then go to line 75
+MOV R2, #8   ; line 73, load value of register 2 to memory location 8
+MOV R3, #9   ; line 74, load value of register 3 to memory location 9
+SUB R4, 1    ; line 75, decrement register 4
+JMP R4, 78   ; line 76, if register 4 is zero or smaller then go to line 78
+JMP 12       ; line 77, go to line 12
+HLT          ; finish the program  
